@@ -1,6 +1,7 @@
-
-	Academic License
-
+% Q6: Download from Genbank a complete mitochondrial genome (mtDNA) of an animal of your
+% choice. Describe the data by reporting: the complete name of the organism, accession number
+% of the sequence and basic statistics including at least sequence length, base counts,
+% CG-content plot. 
 getgenbank('AP003425', 'sequenceOnly', true)
 Error using getncbidata (line 191)
 The key AP003425 was not found in the nucleotide database at this time.
@@ -501,6 +502,12 @@ ans =
 
     27
 
+    
+% Q7: Locate potential protein coding genes in the previous sequence by locating ORFs (you may use
+% the Matlab command seqshoworfs.m -- note that it can return a structure of start and stop
+% positions for each ORF in each reading frame). Choose an appropriate threshold to identify
+% significant ORFs, explain all of the choices you make. Paste the key Matlab commands into the
+% report. Show all results. Briefly explain / discuss your findings.
 seqviewer(hippo)
 seqshoworfs(hippo)
 
@@ -624,6 +631,10 @@ orfs =
 
 orfs.Start(1)
 Expected one output from a curly brace or dot indexing expression, but there were 3 results.
+
+% Q8: Choose one of the identified ORFs and prove via p-value that the ORF is unlikely to be due to
+% chance. Specify for this the test statistic, the significance level, and the null hypothesis. . Paste
+% the key Matlab commands into the report. Briefly explain / discuss your findings.
  
 orfs(1).Start(1)
 
