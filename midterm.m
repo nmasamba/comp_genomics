@@ -980,6 +980,12 @@ AGCACTAGTGGGAGGTTATCTAGTTATAAAAACATATCTAATAATCCCCGACAACCGACGGTCATTATCTACACCCTCCA
 orfs_random_valid = seqshoworfs(hippo_random, 'geneticcode', 2, 'frames', [1,2,3,-1,-2,-3], 'MinimumLength', 226);
 hippo_random = hippo(randperm(length(hippo)))
 
+% Q9 Translate that ORF into an amino acid sequence, using Matlab (Paste the command you used
+% into the report, and the first 50 letters of the resulting AA sequence ? not all of it). Paste all of
+% the AA sequence into BLAST and report the results including the 5 closest organisms (common
+% and Taxonomic name), the name of the protein and its identity score. Create and show a
+% multiple alignment of all 5 proteins retrieved via BLAST plus your original animal?s and Briefly
+% explain/discuss the findings. 
 
 hippoPORF = nt2aa(hippo(orfs_valid(1).Start(2) : orfs_valid(1).Stop(2)));
 hippoPORF
