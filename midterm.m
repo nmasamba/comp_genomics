@@ -1006,6 +1006,11 @@ ans =
 
 MNENLFASFITPTILGLPLVTLIIMFPSILFPAPTRLITNRLVSIQQ*LI
 
+
+% Q10 Retrieve from Genbank a complete sequence of human mtDNA and report its accession number
+% and full name. Check if the above protein is found also in the human mtDNA. Briefly motivate
+% your conclusions. 
+
 human = fastaread('~/Downloads/homoSapiens.fasta')
 
 human = 
