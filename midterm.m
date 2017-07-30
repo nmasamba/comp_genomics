@@ -1904,8 +1904,6 @@ MSSLLL-IIILALSL-AYE*LQKGLD-*A-ELVYSLNKTNDFD-SLNYDNHIYQMPLIYINIILAFTI-SLLG-ILV--Y
 p =
 
     0.0132
-    
- %% funcs mt1.m
 
 hippo_porf10 = nt2aa(hippo(orfs_valid(4).Start(1) : orfs_valid(4).Stop(1)));
 human_porf10 = nt2aa(human(orfs_human(3).Start(4) : orfs_human(3).Stop(4)));
@@ -1931,7 +1929,9 @@ xlabel('Score'); ylabel('Number of Sequences');
 parmhat = evfit(globalscores);
 p = 1 - evcdf(score,parmhat(1),parmhat(2))
 
-%% end of script
+% Q12 Propose an alternative method (not used in question 10) to identify homologous pairs and
+% demonstrate your approach using the human mtDNA and the animal of your choice, Briefly give
+% a discussion/justification of the proposed method. 
 
 [score, localAlignment] = swalign(hippoProtein, humanProtein)
 
